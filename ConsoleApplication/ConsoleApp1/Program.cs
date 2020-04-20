@@ -75,8 +75,8 @@ namespace ConsoleApplication
 
             Console.WriteLine("\n");
             Console.WriteLine("\n");
-
-
+            Console.WriteLine("Press Enter to Terminate");
+            Console.ReadLine();
         }
     }
 }
