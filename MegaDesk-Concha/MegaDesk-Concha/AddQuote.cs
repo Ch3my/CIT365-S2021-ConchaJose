@@ -31,7 +31,7 @@ namespace MegaDesk_Concha
             surfaceCombobox.DataSource = deskMaterialsList;
             List<int> nDrawersList = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7 };
             nDrawersCombobox.DataSource = nDrawersList;
-            List<int> buildTimeList = new List<int> { 14, 5, 7, 3 };
+            List<int> buildTimeList = new List<int> { 14, 7, 5, 3 };
             buildTimeCombobox.DataSource = buildTimeList;
         }
 
@@ -84,11 +84,11 @@ namespace MegaDesk_Concha
             int rushTime = int.Parse(buildTimeCombobox.Text);
 
             // ===== DEBUG =====
-            string message = String.Format("Consumer Name: {0}\ndeskWidth: {1}\ndeskDepth: {2}\n" +
+/*            string message = String.Format("Consumer Name: {0}\ndeskWidth: {1}\ndeskDepth: {2}\n" +
                 "Drawers: {3}\nsurface: {4}\nrush: {5}", consumerFullname, deskWidth, deskDepth,
                 nDrawers, desktopSurface, rushTime);
             MessageBox.Show(message, "Debug");
-
+*/
             // Creamos objectos segun los parametros entregados
             Desk desk = new Desk(deskWidth, deskDepth, nDrawers, desktopSurface);
             DeskQuote deskQuote = new DeskQuote(desk, rushTime, consumerFullname);

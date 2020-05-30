@@ -62,20 +62,26 @@
             // dqCustomerNameVal
             // 
             this.dqCustomerNameVal.AutoSize = true;
+            this.dqCustomerNameVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqCustomerNameVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dqCustomerNameVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dqCustomerNameVal.Location = new System.Drawing.Point(142, 77);
             this.dqCustomerNameVal.Name = "dqCustomerNameVal";
-            this.dqCustomerNameVal.Size = new System.Drawing.Size(51, 20);
+            this.dqCustomerNameVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqCustomerNameVal.Size = new System.Drawing.Size(73, 22);
             this.dqCustomerNameVal.TabIndex = 1;
             this.dqCustomerNameVal.Text = "label2";
             // 
             // dqDeskWidthVal
             // 
             this.dqDeskWidthVal.AutoSize = true;
+            this.dqDeskWidthVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqDeskWidthVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dqDeskWidthVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dqDeskWidthVal.Location = new System.Drawing.Point(142, 127);
             this.dqDeskWidthVal.Name = "dqDeskWidthVal";
-            this.dqDeskWidthVal.Size = new System.Drawing.Size(51, 20);
+            this.dqDeskWidthVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqDeskWidthVal.Size = new System.Drawing.Size(73, 22);
             this.dqDeskWidthVal.TabIndex = 3;
             this.dqDeskWidthVal.Text = "label3";
             // 
@@ -92,10 +98,13 @@
             // dqDeskDepthVal
             // 
             this.dqDeskDepthVal.AutoSize = true;
+            this.dqDeskDepthVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqDeskDepthVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dqDeskDepthVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dqDeskDepthVal.Location = new System.Drawing.Point(142, 182);
             this.dqDeskDepthVal.Name = "dqDeskDepthVal";
-            this.dqDeskDepthVal.Size = new System.Drawing.Size(51, 20);
+            this.dqDeskDepthVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqDeskDepthVal.Size = new System.Drawing.Size(73, 22);
             this.dqDeskDepthVal.TabIndex = 5;
             this.dqDeskDepthVal.Text = "label5";
             // 
@@ -112,10 +121,13 @@
             // dqNDrawersVal
             // 
             this.dqNDrawersVal.AutoSize = true;
+            this.dqNDrawersVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqNDrawersVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dqNDrawersVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dqNDrawersVal.Location = new System.Drawing.Point(566, 77);
             this.dqNDrawersVal.Name = "dqNDrawersVal";
-            this.dqNDrawersVal.Size = new System.Drawing.Size(51, 20);
+            this.dqNDrawersVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqNDrawersVal.Size = new System.Drawing.Size(73, 22);
             this.dqNDrawersVal.TabIndex = 7;
             this.dqNDrawersVal.Text = "label7";
             // 
@@ -132,10 +144,13 @@
             // dqSurfaceMatVal
             // 
             this.dqSurfaceMatVal.AutoSize = true;
+            this.dqSurfaceMatVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqSurfaceMatVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dqSurfaceMatVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dqSurfaceMatVal.Location = new System.Drawing.Point(566, 127);
             this.dqSurfaceMatVal.Name = "dqSurfaceMatVal";
-            this.dqSurfaceMatVal.Size = new System.Drawing.Size(51, 20);
+            this.dqSurfaceMatVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqSurfaceMatVal.Size = new System.Drawing.Size(73, 22);
             this.dqSurfaceMatVal.TabIndex = 9;
             this.dqSurfaceMatVal.Text = "label9";
             // 
@@ -152,10 +167,13 @@
             // dqBuildTimeVal
             // 
             this.dqBuildTimeVal.AutoSize = true;
+            this.dqBuildTimeVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqBuildTimeVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dqBuildTimeVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dqBuildTimeVal.Location = new System.Drawing.Point(566, 182);
             this.dqBuildTimeVal.Name = "dqBuildTimeVal";
-            this.dqBuildTimeVal.Size = new System.Drawing.Size(60, 20);
+            this.dqBuildTimeVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqBuildTimeVal.Size = new System.Drawing.Size(82, 22);
             this.dqBuildTimeVal.TabIndex = 11;
             this.dqBuildTimeVal.Text = "label11";
             // 
@@ -172,20 +190,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(504, 274);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 20);
+            this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Total";
+            this.label1.Text = "Total $";
             // 
             // dqQuoteTotalVal
             // 
             this.dqQuoteTotalVal.AutoSize = true;
-            this.dqQuoteTotalVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dqQuoteTotalVal.Location = new System.Drawing.Point(566, 274);
+            this.dqQuoteTotalVal.BackColor = System.Drawing.SystemColors.Window;
+            this.dqQuoteTotalVal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dqQuoteTotalVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dqQuoteTotalVal.Location = new System.Drawing.Point(566, 268);
             this.dqQuoteTotalVal.Name = "dqQuoteTotalVal";
-            this.dqQuoteTotalVal.Size = new System.Drawing.Size(18, 20);
+            this.dqQuoteTotalVal.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.dqQuoteTotalVal.Size = new System.Drawing.Size(43, 26);
             this.dqQuoteTotalVal.TabIndex = 13;
             this.dqQuoteTotalVal.Text = "0";
             // 
@@ -193,7 +214,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(231, 182);
+            this.label2.Location = new System.Drawing.Point(202, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 14;
@@ -203,7 +224,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(231, 127);
+            this.label3.Location = new System.Drawing.Point(202, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 15;
@@ -222,7 +243,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 24);

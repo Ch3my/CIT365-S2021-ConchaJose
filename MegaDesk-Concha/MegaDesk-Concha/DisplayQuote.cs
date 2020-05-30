@@ -13,7 +13,6 @@ namespace MegaDesk_Concha
     public partial class DisplayQuote : Form
     {
         public Form refBack { get; set; }
-        //public DeskQuote dqDeskQuote { get; set; }
 
         //Override default Close Button. Instead go Back
         protected override void OnFormClosing(FormClosingEventArgs e)
