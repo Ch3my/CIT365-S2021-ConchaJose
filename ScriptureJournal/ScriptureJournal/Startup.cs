@@ -29,6 +29,11 @@ namespace ScriptureJournal
 
             services.AddDbContext<ScripturesContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("ScripturesContext")));
+
+            services.AddMvc().AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AddPageRoute("/Scriptures/Index", "");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
