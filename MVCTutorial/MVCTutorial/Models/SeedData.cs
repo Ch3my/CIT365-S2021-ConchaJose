@@ -25,14 +25,16 @@ namespace MVCTutorial.Models
                         Title = "Meet the Mormons",
                         ReleaseDate = DateTime.Parse("2019-06-28"),
                         Genre = Genre.Documental,
-                        Price = 7.99M
+                        Price = 7.99M,
+                        Rating = "E"
                     },
                     new Movie
                     {
                         Title = "The Other Side of Heaven 2: Fire of Faith",
                         ReleaseDate = DateTime.Parse("1998-10-10"),
                         Genre = Genre.Drama,
-                        Price = 5.99M
+                        Price = 5.99M,
+                        Rating = "E"
                     }
                     );
                 context.SaveChanges();
