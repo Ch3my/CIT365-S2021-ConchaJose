@@ -26,7 +26,7 @@ namespace MVCTutorial.Models
         public DateTime ReleaseDate { get; set; }
         [EnumDataType(typeof(Genre))]
         public Genre Genre { get; set; }
-        [Range(1,100)]
+        [Range(1, 100)]
         [Required]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18,2)")]
@@ -36,5 +36,6 @@ namespace MVCTutorial.Models
         [StringLength(5)]
         [Required]
         public string Rating { get; set; }
+        public string ImgSrc { get; set; }
     }
 }

@@ -26,7 +26,8 @@ namespace MVCTutorial.Models
                         ReleaseDate = DateTime.Parse("2019-06-28"),
                         Genre = Genre.Documental,
                         Price = 7.99M,
-                        Rating = "E"
+                        Rating = "E",
+                        ImgSrc = "/meet-mormons.jpg"
                     },
                     new Movie
                     {
@@ -34,7 +35,9 @@ namespace MVCTutorial.Models
                         ReleaseDate = DateTime.Parse("1998-10-10"),
                         Genre = Genre.Drama,
                         Price = 5.99M,
-                        Rating = "E"
+                        Rating = "E",
+                        ImgSrc = "https://pics.filmaffinity.com/the_other_side_of_heaven_2_fire_of_faith-457037403-large.jpg"
+
                     }
                     );
                 context.SaveChanges();

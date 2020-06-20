@@ -21,10 +21,10 @@ namespace MVCTutorial.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index(string searchString, string movieGenre)
+        public async Task<IActionResult> Index(string searchString, string movieGenre, string sortOrder)
         {
-            Console.WriteLine("Estamos en Index");
-
+            // Crea el parametro que la vista modifica
+            ViewBag.SortingParm = sortOrder == "Date" ? "date_desc" : "Date";
             IQueryable<Genre> genreQuery = from m in _context.Movie
                                             orderby m.Genre
                                             select m.Genre;
@@ -35,6 +35,22 @@ namespace MVCTutorial.Controllers
             {
                 Console.WriteLine("Hay SearchString");
                 movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+            // Sorting
+            // Funciona suficiente, aunque no tiene icono y el primer clic en el orden no funciona
+            Console.WriteLine("Mostrando sortOrder");
+            Console.WriteLine(sortOrder);
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    movies = movies.OrderByDescending(s => s.ReleaseDate);
+                    break;
+                case "date_desc":
+                    movies = movies.OrderByDescending(s => s.ReleaseDate);
+                    break;
+                default:
+                    movies = movies.OrderBy(s => s.ReleaseDate);
+                    break;
             }
 
             if (!String.IsNullOrEmpty(movieGenre))
@@ -52,8 +68,6 @@ namespace MVCTutorial.Controllers
                 Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
                 Movies = await movies.ToListAsync()
             };
-
-            Console.WriteLine(movieGenreVM);
 
             return View(movieGenreVM);
         }
@@ -87,7 +101,7 @@ namespace MVCTutorial.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating,ImgSrc")] Movie movie)
         {
             if (ModelState.IsValid)
             {
