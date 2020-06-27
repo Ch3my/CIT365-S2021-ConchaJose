@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
+
+@{ ViewData["Title"] = "Student Body Statistics"; }
+
+<h2>Student Body Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.EnrollmentDate)
+    </td>
+    <td>
+        @item.StudentCount
+    </td>
+</tr>
+}
+</table>
+
+<br />
+<h2>Contact</h2>
+<span>Jose Concha</span>
+<br />
+<span>Gabriela Mistral 186</span>
+<br />
+<span>Chillan, Chile</span>
+<br />
+<span>cel + 56 9 6833 0644</span>
+<br />
+<span>email joseconcha@gmail.com</span>

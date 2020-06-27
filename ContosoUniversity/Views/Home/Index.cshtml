@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("/img/contoso-home.jpg");
+            /* Set a specific height */
+            height: 320px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
+    <div class="parallax">
+        <h1 class="vertical-center" style="margin-left:3%;color:white;">Contoso University</h1>
+    </div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <h2>Enrolling now for Winter Semester 2021</h2>
+        <p>
+            Apply now to study at Contoso. Get info on entry requirements and find out 
+            how to apply
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Scholarships and Fees</h2>
+        <p>Find out about Tuition fees and student loans and browse our scholarships</p>
+        <p><a class="btn btn-primary" href="https://docs.asp.net/en/latest/data/ef-mvc/intro.html">See the tutorial &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Find you course</h2>
+        <p>Explore your study options at Contoso. With over 250 courses to choose from, we're sure 
+        to share your passion.</p>
+        <p><a class="btn btn-primary" href="/Courses">See courses &raquo;</a></p>
+    </div>
+</div>
